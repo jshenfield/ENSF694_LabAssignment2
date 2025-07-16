@@ -1,6 +1,6 @@
 /*
- *  lab2exe_A.cpp
- *  ENSF 694 Lab 2 Exercise A
+ *  compare_sorts.cpp
+ *  ENSF 694 Lab 2 Exercise E
  *  Completed by: Jack Shenfield
  *  Development Date: July 16th, 2025
  */
