@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/jbs/Desktop/ENSF694/Lab_Assignments/ENSF694_LabAssignment2/lab2exe_A'
+relocations:     []
+...
