@@ -1,6 +1,8 @@
 /*
  *  lab2exe_A.cpp
  *  ENSF 694 Lab 2 Exercise A
+ *  Completed by: Jack Shenfield
+ *  Development Date: July 16th, 2025
  */
 
 int my_strlen(const char *s);
@@ -24,7 +26,7 @@ int my_strlen(const char *s){
 }
 
 void my_strncat(char *dest, const char *source, int n);
-/*  Duplicates strncat from <cstring>, except return type is void.
+/*  Duplicates my_strncat from <cstring>, except return type is void.
  */
 
 void my_strncat(char *dest, const char *source, int n){
@@ -83,18 +85,18 @@ int main(void)
     bytes = sizeof (my_string);
     cout << "\nLine 7: my_string size is still " << bytes << " bytes.";
  
-    /* strncat append the first 3 characters of str5 to the end of my_string */
-    strncat(my_string, str5, 3);
+    /* my_strncat append the first 3 characters of str5 to the end of my_string */
+    my_strncat(my_string, str5, 3);
     cout << "\nLine 8: my_string contains:\"" << my_string << "\"";
   
     length = (int) my_strlen(my_string);
     cout << "\nLine 9: my_string length is " << length << ".";
    
-    strncat(my_string, str2,  4);
+    my_strncat(my_string, str2,  4);
     cout << "\nLine 10: my_string contains:\"" << my_string << "\"";
     
-    /* strncat append ONLY up ot '\0' character from str3 -- not 6 characters */
-    strncat(my_string, str3, 6);
+    /* my_strncat append ONLY up ot '\0' character from str3 -- not 6 characters */
+    my_strncat(my_string, str3, 6);
     cout << "\nLine 11: my_string contains:\"" << my_string << "\"";
    
     length = (int) my_strlen(my_string);

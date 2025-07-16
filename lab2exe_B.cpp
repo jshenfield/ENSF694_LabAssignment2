@@ -1,4 +1,9 @@
-
+/*
+ *  lab2exe_B.cpp
+ *  ENSF 694 Lab 2 Exercise B
+ *  Completed by: Jack Shenfield
+ *  Development Date: July 16th, 2025
+ */
 
 #include <iostream>
 #include <assert.h>
@@ -36,11 +41,16 @@ int main()
 
 int sum_of_array(const int *a, int n)
 {
-    int sum = 0;
-    for(int i=0; i < n; i++)
-        sum += a[i];
-    
-    return sum;
+    if(n == 0){ // if array is empty, return 0
+        return 0;
+    }
+
+    else{
+        int sum = 0; // initialize sum
+        sum += (a[n-1] + sum_of_array(a, n-1)); // add to sum for each recursive step
+        return sum; // return the final sum
+    }
+
 }
 
 
